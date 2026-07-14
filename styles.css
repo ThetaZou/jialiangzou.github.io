@@ -130,6 +130,18 @@ p { margin: 0 0 12px; }
 .education-row p { margin: 0; }
 .education-row span { color: #888; }
 
+.people-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 5px 24px;
+}
+
+.people-links a::before {
+  content: "◇";
+  margin-right: 7px;
+  color: #999999;
+}
+
 .sidebar { padding: 0 0 0 18px; }
 
 .profile-photo {
@@ -201,6 +213,7 @@ footer p {
   nav { gap: 14px; }
   nav a { font-size: 11px; }
   .sidebar { grid-template-columns: 1fr; }
+  .people-links { grid-template-columns: 1fr; }
   .compact-publications { padding-left: 24px; }
 }
 
